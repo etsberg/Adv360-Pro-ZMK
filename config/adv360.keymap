@@ -45,11 +45,11 @@
     keypad {
       display-name = "Kp";
       bindings = <
-        &kp MINUS &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 ______                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp EQUAL
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp DOWN &kp UP                &kp SPACE &kp DEL   &kp END  &kp PG_DN &kp BSPC &kp KP_N0              &kp LEFT     &kp RIGHT     &kp KP_DOT    &kp RBKT        &mo 2
+        ______   ______     ______   ______   ______     ______ ______                                                        &mo 3 ______ &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp EQUAL
+        ______   ______     ______   ______   ______     ______  &none                                                        &none ______ &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+        ______   ______     ______   ______   ______     ______  &none           ______ ______ ______  ______                 &none ______ &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     ______
+        ______   ______     ______   ______   ______     ______                            ______   ______                          ______ &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    ______
+        &mo 2    ______     ______   ______   ______                ______    ______    ______   ______    ______ &kp KP_N0                ______     ______       &kp KP_DOT    ______          &mo 2
       >;
     };
     fn {
@@ -77,7 +77,7 @@
       bindings = <
         &none &none     &none        &none   &none     &none &none                                                           &mo 3 &none &none &none    &none   &none   &none
         &none   &none     &none    &none    &none      &none  &tog WINDOWS                                                     &none &none  &none  &none     &none    &kp LC(LA(LG(RIGHT)))    &none
-        &kp ESC   &none     &none    &none    &none      &none  &none           &none &none &none  &none           &none &none  &kp LC(LA(LG(LEFT)))  &none     &none    &none &none
+        &kp ESC   &Win_Tile_Down     &Win_Tile_Up    &Win_Tile_Left    &Win_Tile_Right      &none  &none           &none &none &none  &none           &none &none  &kp LC(LA(LG(LEFT)))  &none     &none    &none &none
         &none &none &none &kp LC(LA(LG(DOWN))) &kp LC(LA(LG(UP))) &none                   &none &none                           &none  &none  &none &none  &none &none
         &mo 2     &none &none &kp LG(DOWN) &kp LG(UP)                &none &none   &none  &none &none &tog WINDOWS   &kp LG(LEFT) &kp LG(RIGHT)  &none &none &mo 2
       >;
