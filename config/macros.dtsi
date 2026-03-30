@@ -170,28 +170,48 @@
   Win_Tile_Left: Win_Tile_Left {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LG(LEFT)>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp LEFT>
+        , <&macro_wait_time 10>
+        , <&macro_release &kp LGUI>
+        ;
     display-name = "Windows Tile Left";
   };
 
   Win_Tile_Up: Win_Tile_Up {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LG(UP_ARROW)>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp UP>
+        , <&macro_wait_time 10>
+        , <&macro_release &kp LGUI>
+        ;
     display-name = "Windows Tile Up";
   };
 
   Win_Tile_Down: Win_Tile_Down {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LG(DOWN)>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp DOWN>
+        , <&macro_wait_time 10>
+        , <&macro_release &kp LGUI>
+        ;
     display-name = "Windows Tile Down";
   };
 
   Win_Tile_Right: Win_Tile_Right {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LG(RIGHT)>;
+    bindings
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp RIGHT>
+        , <&macro_wait_time 10>
+        , <&macro_release &kp LGUI>
+        ;
     display-name = "Windows Tile Right";
   };
 
